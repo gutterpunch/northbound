@@ -1,5 +1,6 @@
 /*
 Theme Name: Northbound
+
 */
 
 /* 	
@@ -7,152 +8,146 @@ dark green: #7E8859
 dark grey:  #4D4D4F
 light grey: #F2F2F2
 */
-body  {
-font: 100% 'Oswald', Helvetica, Arial, sans-serif;
-margin: 0;
-padding: 0;
-text-align: center; 
-background: #7E8859;
-color: #4D4D4F;
-font-size:16px;
+body {
+    background: none repeat scroll 0 0 #7E8859;
+    color: #4D4D4F;
+    font: 16px 'Oswald',Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.assistive-text, .menu-toggle, .site-title, .screen-reader-text {
+    display: none !important;
 }
 
-/*wp standard */
-.assistive-text, .menu-toggle, .site-title, .screen-reader-text{
-display: none !important;
+img{
+max-width: 100%
 }
 
 #page {
-	width: 960px;  
-	margin: 0 auto; 
-	padding: 0px;
-	text-align: left;
-    background:  url("images/background-top.png") no-repeat scroll center top transparent;	
-} 
-
-#main{
-    padding: 0px;  
-    margin: 0px;
+    background: url("images/background-top.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+#main {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 12px 2px #333333;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     position: relative;
-	width: 960px;  	
-    display: inline-block;	
-    box-shadow: 0 0 12px 2px #333;
-	background-color: #fff;	
-	border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+.site-header {
+    width: 100%;
+}
+.logo {
+    float: left;
+    /*padding: 3.125% 0 3.125% 3.125%;
+    width: 46.3542%;*/
+	width: 46%;
+	padding: 3%;
+
 }
 
-.site-header{
-	width: 960px;  
-}
+/*menu*/
+.menu-Wrapper{
 
-.logo{
-float: left;
-padding: 30px 0 30px 35px;
-width: 445px;
 }
 
 
-
-/* menu */
 #site-navigation {
     float: left;
     margin: 0;
-    padding-left: 35px;
-    padding-top: 60px;
+    padding-left: 1%;
+    padding-top: 72px;
     position: relative;
-    width: 330px;
+    width: 45%;
 }
-
 #site-navigation ul {
-	margin: 0; 
-	padding: 0; 
-	list-style-type: none; 
-	border: none;
+    border: medium none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
 #site-navigation li {
-	float: left;
-	position: relative;
-	border: none;
-	margin: 0; 
-	padding: 0; 	
+    border: medium none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
-
-
 #site-navigation a {
     color: #4D4D4F;
     display: block;
     font-size: 18px;
-    padding: 12px;
-	padding-left:0px;
-	padding-right: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-decoration: none;
     text-transform: uppercase;
 }
-
 #site-navigation li:hover > a {
-    text-decoration:none; 
-    border: none;
-	color: #F2F2F2;
-    -webkit-transition: all 0.5s ease 0s;
-       -moz-transition: all 0.5s ease 0s;
-        -ms-transition: all 0.5s ease 0s;
-         -o-transition: all 0.5s ease 0s;
-            transition: all 0.5s ease 0s;
+    border: medium none;
+    color: #F2F2F2;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
 }
-
 .social {
     float: left;
     height: 25px;
-    width: 115px;
-    padding-top: 72px;
+    margin-left: 20px;	
 }
 .facebook {
+    display: block;
     float: left;
-    margin-right: 15px;
-    width: 25px;
-    height: 25px;
-    display: block;	
-	position: relative;
-}
-.facebookTop{
-	display: block;
-    width: 25px;
     height: 25px;
     position: relative;
-    z-index: 1;	
+    width: 25px;
 }
-
+.facebookTop {
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 25px;
+    z-index: 1;
+}
 .facebookBottom {
     display: block;
-    width: 25px;
     height: 25px;
     position: absolute;
-    top: 0px;
+    top: 0;
+    width: 25px;
 }
-
 .twitter {
+    display: block;
     float: left;
-/*    margin-right: 15px;*/
-    width: 36px;
-    height: 25px;
-    display: block;	
-	position: relative;
-}
-.twitterTop{
-	display: block;
-    width: 36px;
     height: 25px;
     position: relative;
-    z-index: 1;	
+    width: 34px;
+    margin-left: 15px;
+}
+.twitterTop {
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 34px;
+    z-index: 1;
 }
 
 .twitterBottom {
     display: block;
-    width: 36px;
     height: 25px;
     position: absolute;
-    top: 0px;
+    top: 0;
+    width: 34px;
+}
+
+.social a {
+    padding-left: 0 !important;
 }
 
 
@@ -161,11 +156,11 @@ width: 445px;
     display: block;
     float: left;
     line-height: 1.5;
-	padding-top: 70px;
-	padding-bottom: 70px;	
-    padding-right: 80px;
-    padding-left: 80px;	
-	width: 540px;
+	padding-top: 7.29166666666667%;
+	padding-bottom: 7.29166666666667%;	
+    padding-right: 8.3333333%;
+    padding-left: 8.3333333%;	
+	width: 56.25%;
 }
 
 #secondary {
@@ -173,8 +168,7 @@ width: 445px;
     padding: 0 10px 10px;
     position: relative;
     width: 200px;
-    width: 200px;
-	margin-top: 135px;
+	margin-top: 14.0625%;
 	margin-bottom: 30px;
 }
 
@@ -313,17 +307,17 @@ display: none !important;
 
 /*nivo*/
 .slider-wrapper { 
-width: 820px;
-padding: 70px;
+width: 85.41666666666667%;
+padding: 7.29166666666667%;
 padding-bottom: 0px;
 }
 
 .theme-default .nivo-controlNav {
-    left: 750px;
+    left: 89.125%;
     position: relative;
     text-align: center;
     top: -20px;
-    width: 100px;
+    width: 80px;
 	padding-bottom: 0px;
 	height: 10px;
 }
@@ -334,8 +328,17 @@ display: none !important;
 }
 
 
+
+
 /*homepage*/
 .homepageProject{
+padding: 6.25%;
+padding-top: 0px;
+padding-bottom: 3.125%;
+display: inline-block;
+}
+
+.homepageProjectInfo{
 padding: 60px;
 padding-top: 0px;
 display: inline-block;
@@ -344,14 +347,18 @@ display: inline-block;
 .homepageLatest{
 margin: 9px;
 float: left;
-border: 1px solid #4D4D4F;
     height: 105px;
     width: 260px;
+}
+
+.homepageLatest img{
+border: 1px solid #4D4D4F;
 }
 
 .homepageLatestText{
 font-size: 26px;
 padding-left:10px;
+color: #777777;
 
 }
 
@@ -362,6 +369,13 @@ padding-right: 90px;
 padding-left: 90px;
 }
 
+/*home page*/
+.homepageLatestServices {
+    border: 1px solid #FFF;
+    float: left;
+    margin: 9px;
+    width: 260px;
+}
 
 
 
@@ -375,16 +389,20 @@ padding: 60px;
 .portfolio{
 width: 260px;
 height: 210px;
-border: 1px solid #4D4D4F;
 margin: 9px;
 float: left;
+}
+
+.portfolio img{
+border: 1px solid #4D4D4F;
 }
 
 /*popup*/
 .popupNorthbound{
     height: auto;
     overflow: hidden;
-    width: 820px;
+/*    width: 85.41666666666667%;*/
+	width: 100%;
 }	
 
 .popupWrapper{
@@ -407,10 +425,10 @@ margin-left:75px;
 .popupText {
     float: left;
     font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2.08333333333333%;
+    margin-right: 2.08333333333333%;
     text-align: left;
-    width: 440px;
+    width: 45.83333333333333%;
 }
 
 .green{
@@ -432,13 +450,15 @@ float: left;
 	height: 24px;
 	text-decoration: none !important;
 	margin-top: 17px;
+    float: right;
+    margin-right: 15px;	
 }
 
 
 
 .fancybox-nav{
-height: 100%;
-width: 100px;
+height: 70%;
+width: 10.41666666666667;
 }
 
 .fancybox-skin{
@@ -454,42 +474,55 @@ background: #FFF !important;
 /* note height and widths */
 .slideshowJohn, 
 .slideshowStu,
-.slideshowFodder{
-    height: 525px;
+.slideshowFodder,
+.slideshowSerial,
+.slideshowFeather{
+    height: auto;
     position: relative;
-    width: 800px;
+/*	width: 800px;
+    width: 83.33333333333333%;*/
 }
 
 .slideshowJohn > div, 
 .slideshowStu > div,
-.slideshowFodder > div { 
+.slideshowFodder > div,
+.slideshowSerial > div,
+.slideshowFeather > div { 
     position: absolute;  
 }
- 
 
-/*popup responsive*/
-@media screen and (max-height: 700px) {
-	.popupImage img,
-	.slideshowJohn img,
-	.slideshowStu img,
-	.slideshowFodder img{
-	width: 75% !important;
-	}
-	.slideshow{
-	height: 400px !important;
-	}
-} 
- 
+
+/*quirky popup slideshow*/
+.slideshow{
+    height: 100% !important;
+/*    min-height: 530px;*/
+    border: 0 !important;
+}
+.slideshow img{
+width: 100%;
+}
+
+.fancybox-inner{
+height: 100% !important;
+/*min-height: 525px;*/
+}
+
+
+.single {
+
+}
+
+
  
 /*services*/
 .services{
     line-height: 1.5;
-    padding: 70px 80px;
+    padding: 7.29166666666667% 8.33333333333333%;
 }
 .servicesText{
 padding-top: 5px;
-padding-bottom: 30px;
-
+margin-top: 3.125%;
+padding-bottom: 15px;
 }
 
 .services ul{
@@ -509,8 +542,9 @@ float: left;
 
 .servicesQuote{
 text-align: center;
-margin-top: 30px;
+margin-top: 3.125%;
 display: inline-block;
+width: 100%;
 }
 
 
@@ -518,8 +552,8 @@ display: inline-block;
 .contact{
 background: url('images/toronto.png') right bottom no-repeat;
 min-height: 700px;
-padding: 85px;
-padding-top: 70px;
+padding: 7.29167% 7%;
+padding-top: 7.29166666666667%;
 }
 .wpcf7{
 font-size: 16px;
@@ -541,7 +575,7 @@ font-size: 16px;
 }
 #s {
     border: 1px solid #4D4D4F;
-    height: 23px;
+    height: 24px;
     padding-left: 5px;
     width: 118px;
 }
@@ -549,7 +583,7 @@ font-size: 16px;
 
 /*footer*/
 #colophon {
-width: 960px;
+width: 100%;
 height: 165px;
 	background: url('images/background-bottom.png') top center no-repeat;
 }
@@ -665,7 +699,7 @@ span.wpcf7-not-valid-tip {
     border-radius: 0px !important;
     color: #FFFFFF !important;
     font-size: 13px !important;
-    left: 12px !important;
+    left: 1.25% !important;
     padding-left: 8px !important;
 	width: 230px !important;
 	outline: none;
@@ -770,7 +804,8 @@ text, textarea, #author, #url, #email{
     font-size: 13px;
     margin-top: 0;
     padding: 4px;
-    font-family: Helvetica, Arial, Tahoma, Serif;	
+    font-family: Helvetica, Arial, Tahoma, Serif;
+	width: 37.5%;
 }
 label {
     width: 79px;
@@ -789,7 +824,7 @@ label {
 	color: #F2F2F2;
 	font: 100% 'Oswald', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-	height: 24px;
+	height: auto;
 	width: 118px;	
 }
 
@@ -806,16 +841,10 @@ padding-right: 5px;
 padding:5px;
 }
 
-/*home page*/
-.homepageLatestServices {
-    border: 1px solid #FFF;
-    float: left;
-    margin: 9px;
-    width: 260px;
-}
+
 
 .slider-wrapper {
-    height: 405px !important;
+    height: 421875 !important;
 }
 
 .entry-meta{
@@ -833,40 +862,7 @@ display: none !important;
 }
 
 
-/*homepage*/
-.homepageProject{
-padding: 60px;
-padding-top: 0px;
-padding-bottom: 30px;
-display: inline-block;
-}
 
-.homepageProjectInfo{
-padding: 60px;
-padding-top: 0px;
-display: inline-block;
-}
-
-.homepageLatest{
-margin: 9px;
-float: left;
-border: 1px solid #4D4D4F;
-    height: 105px;
-    width: 260px;
-}
-
-.homepageLatestText{
-font-size: 26px;
-padding-left:10px;
-
-}
-
-.homepageQuote{
-width: 960px;
-padding: 20px;
-padding-right: 90px;
-padding-left: 90px;
-}
 
 /*#secondary a:link */
 .homepageProjectInfo  a:link,
@@ -884,12 +880,195 @@ font-size: 26px !important;
     padding-bottom: 0;
 }
 
-.homepageLatestText{
-color: #777777;
-}
+
 
 /*tweak for fancybox update*/
 .fancybox-close {
     display: none !important;
 }
+
+
+.type-post img{
+width: 100%;
+height: auto;
+}
+
+
+
+@media (max-width: 480px) {  
+
+.logo img{
+    width: 100%;
+}
+
+#site-navigation a{
+font-size: 1em;
+padding: 0 2px;
+}
+
+#site-navigation {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 7.25%;
+    position: relative;
+    width: 45%;
+}
+.menu-Wrapper {
+    height: 30px;
+    width: 98% !important;
+    text-align: center;
+    margin: 0 auto;
+	padding-top: 5px;
+}
+
+.social img{
+width: 100%;
+}
+
+.twitter{
+margin-left: 5px !important;
+}
+
+.social{
+margin-left: 10px;
+float: right;
+}
+
+
+.popupDeerman{
+display: none !important;
+}
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.homepageLatestText {
+    text-align: center;
+}
+.homepageLatest {
+    text-align: center;
+    width: 100%;
+}
+.logo {
+    padding-bottom: 0px;
+    text-align: center;
+    width: 94%;
+	height: auto;
+	padding: 10px 3% 0 3%;
+}
+#site-navigation {
+    height: 20px;
+    padding-bottom: 31px;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+}
+.menu-Wrapper {
+    height: 30px;
+    width: 415px;
+    text-align: center;
+    margin: 0 auto;
+	padding-top: 5px;
+}
+
+.homepageLatestServices{
+width: 100% !important;
+}
+
+#primary {
+    display: block;
+    float: left;
+    line-height: 1.5;
+    padding: 7%;
+    width: 86%;
+}
+
+#secondary {
+    margin: auto 0;
+    padding: 0 7% 7%;
+    text-align: left;
+    width: 200px;
+}
+
+/*services ONLY */
+.homepageLatestServices{
+width: 100% !important;
+}
+
+.print, .web{
+width: 100%;
+}
+
+/* ONLY */
+.portfolio{
+width: 100%;
+text-align: center;
+}
+
+/* ONLY */
+.theme-default .nivo-controlNav {
+    left: 78.125%;
+}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+.homepageLatestText {
+    text-align: center;
+}
+.homepageLatest {
+    text-align: center;
+    width: 100%;
+}
+.logo {
+    padding-bottom: 0px;
+    text-align: center;
+    width: 94%;
+	height: auto;
+	padding: 10px 3% 0 3%;
+}
+#site-navigation {
+    height: 20px;
+    padding-bottom: 31px;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+}
+.menu-Wrapper {
+    height: 30px;
+    width: 415px;
+    text-align: center;
+    margin: 0 auto;
+	padding-top: 5px;
+}
+
+#primary {
+    display: block;
+    float: left;
+    line-height: 1.5;
+    padding: 7.29167% 7%;
+    width: 56.25%;
+}
+
+.homepageLatestServices{
+width: 100% !important;
+}
+
+
+/*ONLY*/
+.portfolio {
+    text-align: center;
+    width: 45%;
+}
+.popupImage img {
+    width: 75%;
+}
+
 
